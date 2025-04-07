@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, StyleSheet } from 'react-native';
 
-const ClassificarIMC = ({ imc }) => {
+const ClassificarIMC = ({ imc }) => { // recebe o valor do imc,compara ele com os niveis de IMC e classifica ele 
   let classificacao = '';
 
   if (imc < 18.5) {
@@ -18,7 +18,7 @@ const ClassificarIMC = ({ imc }) => {
     classificacao = 'Obesidade mórbida';
   }
 
-  return <Text style={styles.classificacao}>{classificacao}</Text>;
+  return <Text style={styles.classificacao}>{classificacao}</Text>; // retorna um texto falando a classificação
 };
 
 const styles = StyleSheet.create({
