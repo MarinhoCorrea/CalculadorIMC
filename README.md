@@ -9,6 +9,7 @@ Tabela de conteúdos
    * [Tecnologias](#Tecnologias)
    * [Features](#Features)
    * [Status](Status)
+   * [Link](Link)
 <!--te-->
 # Sobre
 <p align="justify">O projeto é um aplicativo mobile que tem como objetivo calcular o IMC do usuário e comparar com a tabela geral de IMC para aquela altura.<br>
@@ -49,6 +50,10 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [x] Exibe Peso Ideal Mínimo e Máximo
 
 # Status 
-<h2 align="justify"> 
+<h3 align="justify"> 
 	Calculadora IMC  Finalizada ✅ 
-</h2>
+</h3>
+
+# Link 
+<h3>Link para acessar o video de explicação do projeto</h3>
+<p>https://youtu.be/OJik6MwajEE</p>
