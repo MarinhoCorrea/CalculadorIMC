@@ -4,7 +4,7 @@ import { Text, StyleSheet } from 'react-native';
 const PesoIdeal = ({ altura }) => { // inicalização com arrow function
   const alturaMetros = parseFloat(altura) / 100 ; // transforma a altura de CM para Metros e atribuí o valor para a variavel alturaMetros
 
-  if (!alturaMetros || alturaMetros <= 0) { // caso  alturaMetros tiver valor falso ou for <= 0 então retornará a mensagem
+  if (isNaN(alturaMetros) || alturaMetros <= 0) { // caso  alturaMetros tiver valor que não seja número ou for <= 0 então retornará a mensagem
     return <Text style={styles.error}>Altura inválida para calcular o peso ideal.</Text>;
   }
   // cálculo e atibuição para as variáveis dos pesos ideias
