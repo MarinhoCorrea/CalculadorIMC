@@ -12,6 +12,10 @@ const FormIMC = () => {
   const calcularIMC = () => {
     if (peso && altura) {
       const alturaMetros = parseFloat(altura) / 100;
+       if (isNaN(alturaMetros) || alturaMetros <= 0) {
+        alert('Por favor, insira uma altura válida.');
+        return;
+        }
       const imcCalculado = (parseFloat(peso) / (alturaMetros * alturaMetros)).toFixed(2);
       setImc(imcCalculado);
     }
