@@ -12,12 +12,14 @@ const FormIMC = () => {
   const calcularIMC = () => {
     if (peso && altura) {
       const alturaMetros = parseFloat(altura) / 100;
-       if (isNaN(alturaMetros) || alturaMetros <= 0) {
-        alert('Por favor, insira uma altura válida.');
-        return;
-        }
       const imcCalculado = (parseFloat(peso) / (alturaMetros * alturaMetros)).toFixed(2);
       setImc(imcCalculado);
+    }
+    if (isNaN(altura) || altura <= 0) {
+      alert('Por favor, insira uma altura válida.');
+    }
+    if (isNaN(peso) || peso <= 0) {
+      alert('Por favor, insira um peso válido.');
     }
   };
 
@@ -58,6 +60,12 @@ const styles = StyleSheet.create({
     marginBottom: 12,
     paddingHorizontal: 8,
     borderRadius: 5,
+  },
+  error: {
+    marginTop: 20,
+    fontSize: 20,
+    textAlign: 'center',
+    color: 'red',
   },
 });
 
